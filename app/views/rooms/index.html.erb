@@ -1,0 +1,18 @@
+<div class="container mt-3">
+    <div class="row">
+    <% @rooms.each do |room| %>
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Room Name: <%= room.name %></h5>
+                <h5 class="card-title">Room Type: <%= room.room_type %></h5>
+                
+                <%= link_to 'Edit', edit_room_path(room)  %>
+            </div>
+        </div>
+    </div>
+        <% end %>
+    </div>
+</div>
+
+<%= link_to "Create new room", new_room_path %>

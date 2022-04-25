@@ -1,0 +1,10 @@
+<%= form_with model: @rooms do |f| %>
+<%= f.label :name, 'Room Name' %>
+<%= f.text_field :name %>
+
+<%= f.label :room_type, 'Room Type' %>
+<%= f.number_field :room_type %>
+
+<%= f.submit 'Update' %>
+
+<% end %>

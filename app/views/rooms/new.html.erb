@@ -1,0 +1,15 @@
+<div class="container">
+    <%= form_with model: @rooms do |f| %>
+<%= f.label :name, 'Room Name' %>
+<br>
+<%= f.text_field :name %>
+<br>
+
+<%= f.label :room_type, 'Room Type' %>
+<br>
+<%= f.number_field :room_type %>
+<br>
+
+<%= f.submit 'Save room' %>
+<% end %>
+</div>
